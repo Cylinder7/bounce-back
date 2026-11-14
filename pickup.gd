@@ -3,15 +3,17 @@ extends Area2D
 enum Kind { BOOST, INVERT, SLIPPERY }
 
 const DATA = {
-	Kind.BOOST: {"name": "boost", "time": 8.0, "color": Color(0.3, 1.0, 0.4)},
-	Kind.INVERT: {"name": "invert", "time": 6.0, "color": Color(1.0, 0.3, 0.8)},
-	Kind.SLIPPERY: {"name": "slippery", "time": 8.0, "color": Color(0.4, 0.9, 1.0)},
+	Kind.BOOST: {"name": "boost", "time": 8.0},
+	Kind.INVERT: {"name": "invert", "time": 6.0},
+	Kind.SLIPPERY: {"name": "slippery", "time": 8.0},
 }
 
 @export var kind: Kind = Kind.BOOST
+@export var textures: Array[Texture2D]
 
 func _ready():
-	modulate = DATA[kind]["color"]
+	if kind < textures.size() and textures[kind]:
+		$Sprite2D.texture = textures[kind]
 	body_entered.connect(_on_body_entered)
 
 func _on_body_entered(body):
