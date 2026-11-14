@@ -20,26 +20,16 @@ position = Vector2(214.99998, -478)
 scale = Vector2(0.335, 0.335)
 texture = ExtResource("6_ix5fy")
 
-[node name="Player" parent="." unique_id=247310789 instance=ExtResource("1_1yttg")]
-position = Vector2(180, 450)
-
-[node name="Ground" parent="." unique_id=906852571 instance=ExtResource("2_vegtp")]
-position = Vector2(0, 515)
+[node name="MoonBg" type="Sprite2D" parent="." unique_id=1137989727]
+position = Vector2(223, -5555)
+scale = Vector2(0.335, 0.335)
+texture = ExtResource("12_pn84p")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1800846891 node_paths=PackedStringArray("player", "game_over_screen")]
 position = Vector2(180, 320)
 script = ExtResource("3_2dipx")
 player = NodePath("../Player")
 game_over_screen = NodePath("../GameOver")
-
-[node name="Platforms" type="Node2D" parent="." unique_id=1281744299 node_paths=PackedStringArray("camera")]
-script = ExtResource("4_ktxqr")
-platform_scene = ExtResource("1_21iwc")
-camera = NodePath("../Camera2D")
-pickup_scene = ExtResource("7_0ytah")
-
-[node name="Platform" parent="." unique_id=604964959 instance=ExtResource("1_21iwc")]
-position = Vector2(-3, -37)
 
 [node name="GameOver" type="CanvasLayer" parent="." unique_id=1579943469]
 process_mode = 3
@@ -93,8 +83,19 @@ theme_override_fonts/font = ExtResource("9_lo5xk")
 stream = ExtResource("11_lo5xk")
 autoplay = true
 max_distance = 1000000000.0
+parameters/looping = true
 
-[node name="MoonBg" type="Sprite2D" parent="." unique_id=1137989727]
-position = Vector2(223, -5555)
-scale = Vector2(0.335, 0.335)
-texture = ExtResource("12_pn84p")
+[node name="Ground" parent="." unique_id=906852571 instance=ExtResource("2_vegtp")]
+position = Vector2(0, 515)
+
+[node name="Player" parent="." unique_id=247310789 instance=ExtResource("1_1yttg")]
+position = Vector2(180, 450)
+
+[node name="Platform" parent="." unique_id=604964959 instance=ExtResource("1_21iwc")]
+position = Vector2(-3, -37)
+
+[node name="Platforms" type="Node2D" parent="." unique_id=1281744299 node_paths=PackedStringArray("camera")]
+script = ExtResource("4_ktxqr")
+platform_scene = ExtResource("1_21iwc")
+camera = NodePath("../Camera2D")
+pickup_scene = ExtResource("7_0ytah")
