@@ -2,12 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dlrb0rka6arby"
-valid=false
+uid="uid://bv8a45mam32r0"
+path="res://.godot/imported/laser3.png-704283f9103408a919f6cd799157dfc9.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
-source_file="res://assets/moonBG.png"
+source_file="res://assets/laser3.png"
+dest_files=["res://.godot/imported/laser3.png-704283f9103408a919f6cd799157dfc9.ctex"]
 
 [params]
 
