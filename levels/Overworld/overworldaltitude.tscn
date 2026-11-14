@@ -1,3 +1,33 @@
 [gd_scene format=3 uid="uid://b2gb2m2jmk3xq"]
 
+[ext_resource type="Texture2D" uid="uid://bccijlonxcldw" path="res://icon.svg" id="1_1yttg"]
+[ext_resource type="Script" uid="uid://cf7igdtfbjfh4" path="res://levels/Overworld/player.gd" id="1_vegtp"]
+[ext_resource type="Texture2D" uid="uid://md0v5hgi1at0" path="res://assets/Untitled.jpg" id="3_2dipx"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nicuo"]
+size = Vector2(128, 128)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vegtp"]
+
 [node name="overworld" type="Node2D" unique_id=1695892326]
+
+[node name="Player" type="CharacterBody2D" parent="." unique_id=1829353219]
+position = Vector2(0, -224)
+script = ExtResource("1_vegtp")
+
+[node name="Sprite2D" type="Sprite2D" parent="Player" unique_id=2033651188]
+texture = ExtResource("1_1yttg")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player" unique_id=874385340]
+shape = SubResource("RectangleShape2D_nicuo")
+
+[node name="Ground" type="StaticBody2D" parent="." unique_id=969319995]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Ground" unique_id=869447126]
+position = Vector2(4.7683716e-07, 0)
+scale = Vector2(100, 5)
+shape = SubResource("RectangleShape2D_vegtp")
+
+[node name="Sprite2D" type="Sprite2D" parent="Ground" unique_id=1663199841]
+scale = Vector2(10.04, 0.715)
+texture = ExtResource("3_2dipx")
