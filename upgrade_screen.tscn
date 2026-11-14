@@ -26,10 +26,10 @@ offset_bottom = 562.0
 scale = Vector2(0.39729, 0.40042853)
 
 [node name="Label" type="Label" parent="." unique_id=758508925]
-offset_left = 91.0
-offset_top = 177.0
-offset_right = 240.0
-offset_bottom = 207.0
+offset_left = 100.0
+offset_top = 184.0
+offset_right = 249.0
+offset_bottom = 214.0
 text = "Select an upgrade."
 
 [editable path="upgradePanel"]

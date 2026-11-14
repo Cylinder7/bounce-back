@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dvvsoovo18g7r"]
 
-[ext_resource type="Texture2D" uid="uid://c2cvhxd5ky11o" path="res://assets/upgrades/MoreMoney.png" id="1_sn7ge"]
+[ext_resource type="Texture2D" uid="uid://d1mut8ybb16jo" path="res://assets/upgrades/DoubleJump.png" id="1_q6t7t"]
 [ext_resource type="Script" uid="uid://ca5q5wopcy4ik" path="res://button.gd" id="2_q6t7t"]
 
 [node name="upgradePanel" type="Panel" unique_id=529354780]
@@ -30,7 +30,7 @@ offset_left = 14.0
 offset_top = 39.0
 offset_right = 207.0
 offset_bottom = 154.0
-texture = ExtResource("1_sn7ge")
+texture = ExtResource("1_q6t7t")
 expand_mode = 1
 
 [node name="Button" type="Button" parent="." unique_id=1830791152]
