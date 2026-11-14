@@ -2,6 +2,8 @@ extends Node2D
 
 @export var platform_scene: PackedScene
 @export var camera: Camera2D
+@export var pickup_scene: PackedScene
+const PICKUP_CHANCE := 0.15
 
 var next_y := 400.0
 var count := 0
@@ -19,6 +21,11 @@ func spawn():
 	p.position = Vector2(randf_range(60.0, 300.0), next_y)
 	p.type = type
 	add_child(p)
+	if type != Platform.Type.BREAKABLE and count >= 5 and randf() < PICKUP_CHANCE:
+		var pk = pickup_scene.instantiate()
+		pk.kind = randi() % 3
+		pk.position = Vector2(0, -18)
+		p.add_child(pk)
 
 	# The gap above a platform depends on how high that platform bounces you
 	var base = (Stats.jump_force * Stats.jump_force) / (2.0 * 1200.0) * 0.8

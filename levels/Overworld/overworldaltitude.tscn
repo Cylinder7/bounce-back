@@ -6,7 +6,9 @@
 [ext_resource type="Script" uid="uid://c5kr36ptr7mss" path="res://levels/Overworld/camera_2d.gd" id="3_2dipx"]
 [ext_resource type="Script" uid="uid://teroivo4vidu" path="res://levels/Overworld/platforms.gd" id="4_ktxqr"]
 [ext_resource type="Texture2D" uid="uid://b7spvnt5uk8pf" path="res://assets/cloudsBG.jpg" id="6_ix5fy"]
+[ext_resource type="PackedScene" uid="uid://d2n72gidxqpge" path="res://pickup.tscn" id="7_0ytah"]
 [ext_resource type="Script" uid="uid://dnbm2m2k7gthj" path="res://levels/Overworld/game_over.gd" id="7_w0l32"]
+[ext_resource type="Script" uid="uid://8wd0hjrq2kig" path="res://levels/Overworld/hud.gd" id="9_xf2t5"]
 
 [sub_resource type="SystemFont" id="SystemFont_w0l32"]
 
@@ -33,6 +35,7 @@ game_over_screen = NodePath("../GameOver")
 script = ExtResource("4_ktxqr")
 platform_scene = ExtResource("1_21iwc")
 camera = NodePath("../Camera2D")
+pickup_scene = ExtResource("7_0ytah")
 
 [node name="Platform" parent="." unique_id=604964959 instance=ExtResource("1_21iwc")]
 position = Vector2(-3, -37)
@@ -63,3 +66,19 @@ offset_top = 342.0
 offset_right = 218.0
 offset_bottom = 373.0
 text = "RESTART"
+
+[node name="HUD" type="CanvasLayer" parent="." unique_id=1974108682 node_paths=PackedStringArray("player")]
+script = ExtResource("9_xf2t5")
+player = NodePath("../Player")
+
+[node name="AltitudeLabel" type="Label" parent="HUD" unique_id=673613604]
+offset_left = 156.0
+offset_top = -3.0
+offset_right = 196.0
+offset_bottom = 20.0
+
+[node name="EffectsLabel" type="Label" parent="HUD" unique_id=1676932157]
+offset_left = 153.0
+offset_top = 19.0
+offset_right = 193.0
+offset_bottom = 42.0
