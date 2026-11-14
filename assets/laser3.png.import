@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cpyoxif7emmap"
-path="res://.godot/imported/sheild.png-f48868aa1b92e0db3dde0839478b6cc5.ctex"
+uid="uid://bv8a45mam32r0"
+path="res://.godot/imported/laser3.png-704283f9103408a919f6cd799157dfc9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/upgrades/sheild.png"
-dest_files=["res://.godot/imported/sheild.png-f48868aa1b92e0db3dde0839478b6cc5.ctex"]
+source_file="res://assets/laser3.png"
+dest_files=["res://.godot/imported/laser3.png-704283f9103408a919f6cd799157dfc9.ctex"]
 
 [params]
 

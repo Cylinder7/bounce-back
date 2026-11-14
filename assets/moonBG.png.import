@@ -2,12 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dlrb0rka6arby"
-valid=false
+uid="uid://f2p0pvfrbgyw"
+path="res://.godot/imported/moonBG.png-a15d8db1a6261db06e49c422b7a8fad2.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://assets/moonBG.png"
+dest_files=["res://.godot/imported/moonBG.png-a15d8db1a6261db06e49c422b7a8fad2.ctex"]
 
 [params]
 
