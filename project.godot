@@ -10,7 +10,7 @@ config_version=5
 
 [application]
 
-config/name="bounce back"
+config/name="bounce_back"
 run/main_scene="uid://b2gb2m2jmk3xq"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 config/icon="res://icon.svg"
