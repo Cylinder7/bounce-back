@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://ca84s3u4q1sgq"]
+
+[ext_resource type="AudioStream" uid="uid://brpxiyutsqxu7" path="res://levels/Overworld/bgm.mp3" id="1_l7bcd"]
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" unique_id=1525101855]
+stream = ExtResource("1_l7bcd")
+autoplay = true
+max_distance = 1000000000000.0
