@@ -1,3 +1,21 @@
 [gd_scene format=3 uid="uid://b2gb2m2jmk3xq"]
 
+[ext_resource type="Texture2D" uid="uid://bccijlonxcldw" path="res://icon.svg" id="1_1yttg"]
+[ext_resource type="Script" uid="uid://cf7igdtfbjfh4" path="res://levels/Overworld/player.gd" id="1_vegtp"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_48mj1"]
+size = Vector2(128, 128)
+
 [node name="overworld" type="Node2D" unique_id=1695892326]
+
+[node name="Player" type="CharacterBody2D" parent="." unique_id=1709375711]
+position = Vector2(370, 144)
+script = ExtResource("1_vegtp")
+
+[node name="Sprite2D" type="Sprite2D" parent="Player" unique_id=882223347]
+position = Vector2(0, 1)
+texture = ExtResource("1_1yttg")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player" unique_id=1609857037]
+position = Vector2(0, 1)
+shape = SubResource("RectangleShape2D_48mj1")
