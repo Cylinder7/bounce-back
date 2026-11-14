@@ -91,3 +91,4 @@ theme_override_fonts/font = ExtResource("9_lo5xk")
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1627796327]
 stream = ExtResource("11_lo5xk")
 autoplay = true
+max_distance = 1000000000.0
