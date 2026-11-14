@@ -1,10 +1,30 @@
 [gd_scene format=3 uid="uid://b2gb2m2jmk3xq"]
 
 [ext_resource type="PackedScene" uid="uid://u4pccx5wr5p5" path="res://levels/Overworld/player.tscn" id="1_1yttg"]
+[ext_resource type="PackedScene" uid="uid://dvcxtrutyudhl" path="res://platform.tscn" id="1_21iwc"]
+[ext_resource type="PackedScene" uid="uid://dk3edjndjl5u" path="res://levels/Overworld/ground.tscn" id="2_vegtp"]
+[ext_resource type="Script" uid="uid://c5kr36ptr7mss" path="res://levels/Overworld/camera_2d.gd" id="3_2dipx"]
+[ext_resource type="Script" uid="uid://teroivo4vidu" path="res://levels/Overworld/platforms.gd" id="4_ktxqr"]
 
 [node name="overworld" type="Node2D" unique_id=1695892326]
 
 [node name="Player" parent="." unique_id=247310789 instance=ExtResource("1_1yttg")]
-position = Vector2(370, 144)
+position = Vector2(151, -230)
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=958234911]
+
+[node name="Ground" parent="." unique_id=906852571 instance=ExtResource("2_vegtp")]
+position = Vector2(-6, 5)
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1800846891 node_paths=PackedStringArray("player")]
+position = Vector2(3, -7)
+script = ExtResource("3_2dipx")
+player = NodePath("../Player")
+
+[node name="Platforms" type="Node2D" parent="." unique_id=1281744299 node_paths=PackedStringArray("camera")]
+script = ExtResource("4_ktxqr")
+platform_scene = ExtResource("1_21iwc")
+camera = NodePath("../Camera2D")
+
+[node name="Platform" parent="." unique_id=604964959 instance=ExtResource("1_21iwc")]
+position = Vector2(-3, -37)
