@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://dvvsoovo18g7r"]
+
+[ext_resource type="Texture2D" path="res://assets/placeholder.jpg" id="1_sn7ge"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_bt7rk"]
+outline_size = 1
+outline_color = Color(0, 0, 0, 1)
+
+[node name="upgradePanel" type="Panel" unique_id=529354780]
+offset_right = 227.0
+offset_bottom = 293.0
+
+[node name="Description" type="Label" parent="." unique_id=1945742561]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 163.0
+offset_right = 211.0
+offset_bottom = 279.0
+text = "Upgrades "
+
+[node name="Title" type="Label" parent="." unique_id=1950237410]
+layout_mode = 0
+offset_left = 11.0
+offset_top = 7.0
+offset_right = 203.0
+offset_bottom = 37.0
+theme_override_constants/outline_size = 0
+text = "Template Upgrade"
+label_settings = SubResource("LabelSettings_bt7rk")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1553890271]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 39.0
+offset_right = 207.0
+offset_bottom = 149.0
+texture = ExtResource("1_sn7ge")
+expand_mode = 1
