@@ -1,3 +1,19 @@
 [gd_scene format=3 uid="uid://dk3edjndjl5u"]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cnmx4"]
+size = Vector2(400, 20)
+
+[sub_resource type="DrawableTexture2D" id="DrawableTexture2D_vpm7f"]
+
 [node name="Ground" type="Node2D" unique_id=906852571]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=11961628]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1486723559]
+position = Vector2(200, 10)
+shape = SubResource("RectangleShape2D_cnmx4")
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D" unique_id=1216333779]
+position = Vector2(200, 10)
+scale = Vector2(6.25, 0.3125)
+texture = SubResource("DrawableTexture2D_vpm7f")
