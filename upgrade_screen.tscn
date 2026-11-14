@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://la70qxv64bd0"]
+
+[ext_resource type="PackedScene" uid="uid://dvvsoovo18g7r" path="res://upgrade_panel.tscn" id="1_adbc8"]
+
+[node name="Upgrade Screen" type="Node2D" unique_id=1948053345]
+
+[node name="upgradePanel" parent="." unique_id=529354780 instance=ExtResource("1_adbc8")]
+offset_left = 9.0
+offset_top = 266.99997
+offset_right = 236.0
+offset_bottom = 559.99994
+scale = Vector2(0.39729, 0.40042853)
+
+[node name="upgradePanel2" parent="." unique_id=1355161941 instance=ExtResource("1_adbc8")]
+offset_left = 124.00001
+offset_top = 267.0
+offset_right = 351.0
+offset_bottom = 560.0
+scale = Vector2(0.39729, 0.40042853)
+
+[node name="upgradePanel3" parent="." unique_id=1660065971 instance=ExtResource("1_adbc8")]
+offset_left = 242.0
+offset_top = 268.99997
+offset_right = 469.0
+offset_bottom = 562.0
+scale = Vector2(0.39729, 0.40042853)
+
+[node name="Label" type="Label" parent="." unique_id=758508925]
+offset_left = 91.0
+offset_top = 177.0
+offset_right = 240.0
+offset_bottom = 207.0
+text = "Select an upgrade."
+
+[editable path="upgradePanel"]
+[editable path="upgradePanel2"]
+[editable path="upgradePanel3"]
