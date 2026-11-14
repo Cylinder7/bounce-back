@@ -11,6 +11,7 @@
 [ext_resource type="FontFile" uid="uid://bygxwo0bllip7" path="res://assets/PixelOperator8-Bold.ttf" id="9_lo5xk"]
 [ext_resource type="Script" uid="uid://8wd0hjrq2kig" path="res://levels/Overworld/hud.gd" id="9_xf2t5"]
 [ext_resource type="AudioStream" uid="uid://brpxiyutsqxu7" path="res://levels/Overworld/bgm.mp3" id="11_lo5xk"]
+[ext_resource type="Texture2D" uid="uid://f2p0pvfrbgyw" path="res://assets/moonBG.png" id="12_pn84p"]
 
 [node name="overworld" type="Node2D" unique_id=1695892326]
 
@@ -92,3 +93,8 @@ theme_override_fonts/font = ExtResource("9_lo5xk")
 stream = ExtResource("11_lo5xk")
 autoplay = true
 max_distance = 1000000000.0
+
+[node name="MoonBg" type="Sprite2D" parent="." unique_id=1137989727]
+position = Vector2(223, -5555)
+scale = Vector2(0.335, 0.335)
+texture = ExtResource("12_pn84p")
