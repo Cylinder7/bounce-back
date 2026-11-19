@@ -12,7 +12,7 @@ const JUMP_MULT = {
 	Type.STICKY: 0.7,
 }
 
-# Placeholder colors until you have art
+# Placeholder colors until we have art
 const COLORS = {
 	Type.NORMAL: Color.WHITE,
 	Type.MOVING: Color(0.4, 0.7, 1.0),
